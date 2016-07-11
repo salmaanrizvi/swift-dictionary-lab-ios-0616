@@ -14,14 +14,18 @@
  */
 // write your code here
 
-
+var stateCapitals = ["New York" : "Albany",
+                     "Ohio" : "Columbus",
+                     "Florida" : "Tallahassee",
+                     "Georgia" : "Atlanta",
+                     "Kentucky" : "Frankfort"]
 
 
 /*: question2
  ### 2. What is the type of the dictionary you created in Question 1?
  */
 
-
+// String : String
 
 
 /*: question3
@@ -29,7 +33,7 @@
  */
 // write your code here
 
-
+let capital = stateCapitals["Florida"]
 
 
 /*: question4
@@ -37,7 +41,9 @@
  */
 // write your code here
 
-
+if let capital = capital {
+    print("The capital of Florida is \(capital)")
+}
 
 
 /*: question5
@@ -45,7 +51,7 @@
  */
 // write your code here
 
-
+let anotherCapital = stateCapitals["Pennsylvania"]
 
 
 /*: question6
@@ -53,7 +59,11 @@
  */
 // write your code here
 
-
+if let capital = anotherCapital {
+    print(capital)
+} else {
+    print("I don't know Pennsylvania's capital")
+}
 
 
 /*: question7
@@ -61,7 +71,7 @@
  */
 // write your code here
 
-
+stateCapitals["Pennsylvania"] = "Harrisburg"
 
 
 /*: question8
@@ -69,7 +79,11 @@
  */
 // write your code here
 
+let anotherCapital2 = stateCapitals["Pennsylvania"]
 
+if let capital = anotherCapital2 {
+    print("Pennsylvania's capital is \(capital)")
+}
 
 
 /*: question9
@@ -77,8 +91,9 @@
  */
 // write your code here
 
+stateCapitals["Pennsylvania"] = nil
 
-
+print(stateCapitals)
 
 /*: question10
  ### 10. You have been given the constant `state` with a state name. Use that constant to retrieve the state's capital from the dictionary. Print "The capital of <State> is <Capital>" to the console.
@@ -86,7 +101,9 @@
 let state = "New York"
 // write your code here
 
-
+if let capital = stateCapitals["New York"] {
+    print("The capital of \(state) is \(capital)")
+}
 
 
 /*: question11
@@ -101,13 +118,16 @@ let state = "New York"
  */
 // write your code here
 
-
+let dictionary = ["Nirvana" : ["Kurt Cobain", "Krist Novoselic", "Dave Grohl"],
+                 "The Beatles" : ["John Lennon", "George Harrison", "Paul McCartney", "Ringo Starr"],
+                 "The Breeders" : ["Kim Deal", "Kelley Deal", "Josephine Wiggs", "Jim Macpherson"],
+                 "Pixies" : ["Frank Black", "Joey Santiago", "Kim Deal", "David Lovering"]]
 
 
 /*: question12
  ### 12. What is the type of the dictionary you created in Question 11?
  */
-
+// string : [string]
 
 
 
@@ -117,7 +137,9 @@ let state = "New York"
 let bandName = "Pixies"
 // write your code here
 
-
+if let bandMembers = dictionary[bandName] {
+    print(bandMembers)
+}
 
 
 /*:
